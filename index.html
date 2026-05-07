@@ -1,45 +1,187 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>你的名字 | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XWM | 全栈开发者 & UI设计</title>
+    <meta name="description" content="XWM的个人作品集，展示校园食堂系统、音乐播放器、以及桌面应用等精彩项目。">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="hero">
-    <h1>你的名字</h1>
-    <p>前端开发 / 全栈开发 / AI 应用开发</p>
-    <div>
-      <a href="https://github.com/你的用户名">GitHub</a>
-      <a href="mailto:你的邮箱">Email</a>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
     </div>
-  </header>
 
-  <main>
-    <section>
-      <h2>关于我</h2>
-      <p>我热爱构建有用、清晰、体验良好的软件，关注 Web 开发、AI 应用和产品设计。</p>
-    </section>
+    <nav class="navbar glass">
+        <div class="logo">XWM<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#projects">项目</a></li>
+            <li><a href="#contact">联系我</a></li>
+        </ul>
+    </nav>
 
-    <section>
-      <h2>项目</h2>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content fade-in">
+                <h2 class="greeting">你好，我是</h2>
+                <h1 class="name">XWM</h1>
+                <p class="title">全栈开发工程师 & 设计爱好者</p>
+                <p class="description">
+                    热衷于构建美观、流畅且高效的软件。拥有跨平台开发、前后端分离、以及微信云开发经验。
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">查看项目 <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/xwm1653571610-creator" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in delay-1">
+                <div class="glass-card profile-card">
+                    <div class="avatar-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="number">3+</span>
+                            <span class="label">核心项目</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">10+</span>
+                            <span class="label">技术栈</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="project">
-        <h3>项目名称</h3>
-        <p>一句话说明这个项目做什么。</p>
-        <p>技术栈：React / Node.js / Python</p>
-        <a href="#">GitHub</a>
-        <a href="#">在线演示</a>
-      </div>
+        <section id="projects" class="projects-section">
+            <h2 class="section-title fade-in">精选项目</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card glass fade-in">
+                    <div class="project-image">
+                        <img src="assets/images/canteen.png" alt="校园食堂点餐系统">
+                        <div class="project-overlay">
+                            <div class="tech-tags">
+                                <span>UniApp</span>
+                                <span>Node.js</span>
+                                <span>微信云开发</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>智慧校园食堂系统</h3>
+                        <p>一个完整的全栈餐饮解决方案，支持微信小程序多端。包含稳定的云存储图片上传（支持大文件突破限制）、云数据库和 HTTPS URL云端解析机制，确保在各种网络条件下的流畅用户体验。</p>
+                        <div class="project-links">
+                            <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i> 详情</a>
+                            <a href="#" class="link-btn"><i class="fab fa-github"></i> 源码</a>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="project">
-        <h3>另一个项目</h3>
-        <p>介绍你的项目亮点和你做了什么。</p>
-        <p>技术栈：Vue / Flask / MySQL</p>
-        <a href="#">GitHub</a>
-      </div>
-    </section>
-  </main>
+                <!-- Project 2 -->
+                <div class="project-card glass fade-in delay-1">
+                    <div class="project-image">
+                        <img src="assets/images/music.png" alt="现代音乐播放器">
+                        <div class="project-overlay">
+                            <div class="tech-tags">
+                                <span>Vue/UniApp</span>
+                                <span>Node.js</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>HM Music 跨平台音乐应用</h3>
+                        <p>设计精美的音乐播放应用。拥有令人惊艳的拟物化 UI 与流畅的动画交互。底层对接自定义 Node.js RESTful API，并结合 MySQL 数据库管理庞大的音乐与用户数据。</p>
+                        <div class="project-links">
+                            <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i> 详情</a>
+                            <a href="#" class="link-btn"><i class="fab fa-github"></i> 源码</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass fade-in delay-2">
+                    <div class="project-image">
+                        <img src="assets/images/desktop.png" alt="Qt 桌面综合工具">
+                        <div class="project-overlay">
+                            <div class="tech-tags">
+                                <span>C++</span>
+                                <span>Qt</span>
+                                <span>UI设计</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>多功能终端/桌面套件</h3>
+                        <p>基于 C++ 和 Qt 框架开发的高效本地应用。集成了高度定制化的虚拟键盘模块、实时的文本转二维码（Text-to-QRCode）功能。界面极简专业，性能卓越，适用于嵌入式设备或桌面端。</p>
+                        <div class="project-links">
+                            <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i> 详情</a>
+                            <a href="#" class="link-btn"><i class="fab fa-github"></i> 源码</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="about-section fade-in">
+            <h2 class="section-title">我的技术栈</h2>
+            <div class="skills-container">
+                <div class="skill-category glass">
+                    <h3>前端开发</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Vue.js / UniApp</span>
+                        <span class="skill-tag">HTML5 & CSS3</span>
+                        <span class="skill-tag">JavaScript / TypeScript</span>
+                        <span class="skill-tag">现代化UI动效</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>后端开发</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express / Koa</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">微信云开发</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>桌面/其他</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Qt Framework</span>
+                        <span class="skill-tag">Git版本控制</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section fade-in">
+            <div class="contact-card glass">
+                <h2>准备好开始合作了吗？</h2>
+                <p>无论你是想讨论技术问题，还是有项目合作的意向，随时欢迎与我联系。</p>
+                <a href="mailto:xwm1653571610@gmail.com" class="btn btn-primary btn-lg"><i class="fas fa-envelope"></i> 给我发邮件</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 XWM. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/xwm1653571610-creator"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
